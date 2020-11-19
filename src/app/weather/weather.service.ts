@@ -50,3 +50,8 @@ export class WeatherService {
     )
   }
 }
+
+// test use
+export interface IWeatherService {
+  getCurrentWeather(city: string, country: string):Observable<ICurrentWeather>
+}
